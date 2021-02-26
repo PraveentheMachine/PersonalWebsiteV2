@@ -1,0 +1,15 @@
+{
+  "name": "personalwebsitev2",
+  "version": "1.0.0",
+  "description": "Personl Website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Praveen Bandarage",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
