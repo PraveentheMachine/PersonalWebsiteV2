@@ -2,7 +2,7 @@
 
 # PersonalWebsiteV2
 
-This is the second iteration of my website, I have retired "praveenbandarage.me" and migrated to https://www.praveenbandarage.com/ 
+This is the second iteration of my website, I have retired "praveenbandarage.me" and migrated to https://www.praveenbandarage.com/ I have utilised Vercel and setup CI such that once I commit to master it will auto update website which is a neat feature.
 
 ### Standard View
 
