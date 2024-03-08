@@ -1,23 +1,17 @@
 {
-  "name": "PersonalWebsiteV2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "praveen-website",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build-css": "npx tailwindcss-cli@latest build ./src/styles.css -o ./public/styles.css"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PraveentheMachine/PersonalWebsiteV2.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PraveentheMachine/PersonalWebsiteV2/issues"
-  },
-  "homepage": "https://github.com/PraveentheMachine/PersonalWebsiteV2#readme",
   "dependencies": {
-    "tailwindcss": "^2.1.2"
+    "astro": "^4.4.15",
+    "@astrojs/check": "^0.5.6",
+    "typescript": "^5.4.2"
   }
 }
