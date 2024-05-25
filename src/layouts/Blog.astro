@@ -1,0 +1,35 @@
+---
+
+const { frontmatter } = Astro.props;
+
+import Header from '../components/Header'
+import Navbar from '../components/Navbar';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{frontmatter.title}</title>
+	</head>
+
+	<body>
+  <Navbar />
+		<slot />
+	</body>
+</html>
+
+<style >
+	* {
+		box-sizing:  border-box;
+	}
+	body {
+		margin: 0;
+		font-family: sans-serif;
+	}
+
+</style>

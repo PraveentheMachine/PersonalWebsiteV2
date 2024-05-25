@@ -1,0 +1,15 @@
+---
+import { getCollection } from "astro:content";
+import BlogPost from "../components/BlogPost.astro";
+import Layout from "../layouts/Layout.astro";
+import BlogGrid from '../components/BlogGrid'
+
+const pageTitle = "Blog";
+const allPosts = await getCollection("posts");
+console.log('Hi! I’m the server. This is logged in the terminal where Astro is running.');
+console.log(allPosts)
+---
+
+<Layout title={pageTitle} topHeadingText="" bottomHeadingText="">
+  <BlogGrid blogPosts ={allPosts} /> 
+</Layout>
