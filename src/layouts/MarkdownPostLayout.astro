@@ -1,0 +1,16 @@
+---
+import Layout from "./Layout.astro";
+import Quote from "../components/blog/Quote"
+import ContentContainer from "../components/Container"
+import BlogContainer from "../components/blog/BlogContainer";
+const { frontmatter } = Astro.props;
+---
+<Layout title={frontmatter.title} topHeadingText={frontmatter.topText} bottomHeadingText={frontmatter.bottomText}>
+  <ContentContainer >
+    <BlogContainer>
+    <Quote author={frontmatter.quoteObj.author} quote ={frontmatter.quoteObj.quote} />
+    <slot />
+    </BlogContainer>
+  </ContentContainer>
+
+</Layout>

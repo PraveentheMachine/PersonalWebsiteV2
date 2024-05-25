@@ -1,0 +1,7 @@
+.blog-container {
+  color: black;
+  padding: 50px 50px 20px 50px;
+  width: 80%;
+  max-width: 80ch;
+  margin: 0 auto;
+}

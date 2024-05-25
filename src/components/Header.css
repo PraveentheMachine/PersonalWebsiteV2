@@ -1,0 +1,33 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  color: black;
+  padding: 50px 50px 150px 50px;
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero-welcome-text {
+  font-size: 1.5rem;
+}
+span {
+  margin: 0;
+  padding: 0;
+}
+.hero-title {
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  padding: 0;
+  font-size: 6rem;
+}
