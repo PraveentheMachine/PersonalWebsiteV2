@@ -10,6 +10,6 @@ console.log('Hi! I’m the server. This is logged in the terminal where Astro is
 console.log(allPosts)
 ---
 
-<Layout title={pageTitle} topHeadingText="" bottomHeadingText="">
+<Layout title={pageTitle} topHeadingText="" bottomHeadingText="" pubDate={new Date()}>
   <BlogGrid blogPosts ={allPosts} /> 
 </Layout>
