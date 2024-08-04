@@ -1,0 +1,13 @@
+.quote-container{
+}
+
+.quote-container-text{
+ margin-bottom: 10px;
+}
+
+.quote-text{
+ font-style: italic;
+ font-size: 16px;
+ line-height: 22px; /* Recommended for readability */
+
+}

@@ -27,7 +27,7 @@ interface BlogProps {
 const BlogGrid: React.FC<BlogProps> = ({ blogPosts }) => {
   return (
     <div className="container">
-      {blogPosts.map(entry => {
+      {blogPosts && blogPosts.map(entry => {
        return (
        <BlogPostGrid blogPost={entry}></BlogPostGrid>
        )

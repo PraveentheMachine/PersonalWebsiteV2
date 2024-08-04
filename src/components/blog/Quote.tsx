@@ -1,3 +1,4 @@
+import './Quote.css'
 interface QuoteProps {
   author: string;
   quote: string;
@@ -6,11 +7,9 @@ interface QuoteProps {
 const Quote: React.FC<QuoteProps> = ({ author, quote }) => {
 
   return (
-    <div>
-      <div><h1>{quote}</h1></div>
-      <div><h1>{author}</h1></div>
-
-
+    <div className='quote-container'>
+      <div className='quote-container-text'><p className='quote-text'>{quote}</p></div>
+      <div className='quote-container-author'><p className='quote-text'>{author}</p></div>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import ContentContainer from "../components/Container"
 import BlogContainer from "../components/blog/BlogContainer";
 const { frontmatter } = Astro.props;
 ---
-<Layout title={frontmatter.title} topHeadingText={frontmatter.topText} bottomHeadingText={frontmatter.bottomText}>
+<Layout title={frontmatter.title} topHeadingText={frontmatter.topText} bottomHeadingText={frontmatter.bottomText} pubDate={frontmatter.pubDate}>
   <ContentContainer >
     <BlogContainer>
     <Quote author={frontmatter.quoteObj.author} quote ={frontmatter.quoteObj.quote} />
