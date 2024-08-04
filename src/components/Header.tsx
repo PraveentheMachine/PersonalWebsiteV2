@@ -6,9 +6,10 @@ interface HeaderProps {
   topText: string;
   title: string;
   bottomText: string;
+  pubDate: Date;
 }
 
-const Header: React.FC<HeaderProps> = ({ topText, title, bottomText }) => {
+const Header: React.FC<HeaderProps> = ({ topText, title, bottomText,pubDate }) => {
   return (
     <div className="dawg">
       <ContentContainer>
@@ -18,6 +19,7 @@ const Header: React.FC<HeaderProps> = ({ topText, title, bottomText }) => {
             <p className="hero-welcome-text">{topText}</p>
             <h1 className="hero-title">{title}</h1>
             <p className="hero-welcome-text">{bottomText}</p>
+            <p>{pubDate && pubDate.toISOString()}</p>
           </span>
         </div>
       </ContentContainer>

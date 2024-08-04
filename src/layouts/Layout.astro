@@ -3,9 +3,10 @@ interface Props {
 	title: string;
 	topHeadingText: string;
 	bottomHeadingText: string;
+	pubDate: Date
 }
 
-const { title, topHeadingText, bottomHeadingText } = Astro.props;
+const { title, topHeadingText, bottomHeadingText, pubDate } = Astro.props;
 
 import Header from '../components/Header'
 ---
@@ -21,7 +22,7 @@ import Header from '../components/Header'
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header title = {title} topText = {topHeadingText} bottomText = {bottomHeadingText}  />
+		<Header title = {title} topText = {topHeadingText} bottomText = {bottomHeadingText} pubDate={pubDate}  />
 		<slot />
 	</body>
 </html>
