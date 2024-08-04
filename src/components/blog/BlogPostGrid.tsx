@@ -8,7 +8,7 @@ interface BlogPostGrid {
 export function BlogPostGrid<BlogPostGrid>({ blogPost }) {
   return (
     <a href={`${blogPost.collection}/${blogPost.slug}`}>
-      <div className="">
+      <div className="container">
         <p>{blogPost.data.title}</p>
       </div>
     </a>
