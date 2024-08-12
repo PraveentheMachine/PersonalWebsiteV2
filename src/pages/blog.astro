@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-import BlogGrid from '../components/BlogGrid'
+import BlogGrid from '../components/blog/BlogGrid'
 
 const pageTitle = "Blog";
 const allPosts = await getCollection("posts");
@@ -9,6 +9,6 @@ console.log('Hi! I’m the server. This is logged in the terminal where Astro is
 console.log(allPosts)
 ---
 
-<Layout title={pageTitle} topHeadingText="" bottomHeadingText="" pubDate={new Date()}>
+<Layout title={pageTitle} topHeadingText="" bottomHeadingText="">
   <BlogGrid blogPosts ={allPosts} /> 
 </Layout>

@@ -6,7 +6,7 @@ interface HeaderProps {
   topText: string;
   title: string;
   bottomText: string;
-  pubDate: Date;
+  pubDate?: Date;
 }
 
 const Header: React.FC<HeaderProps> = ({ topText, title, bottomText,pubDate }) => {

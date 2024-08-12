@@ -2,7 +2,7 @@ import React from "react";
 import "./ContentContainer.css";
 
 interface ContentContainerProps {
-  children: React.ReactNode; // ReactNode represents any renderable React child: JSX, string, array, etc.
+  children: React.ReactNode;
 }
 
 const ContentContainer: React.FC<ContentContainerProps> = ({ children }) => {

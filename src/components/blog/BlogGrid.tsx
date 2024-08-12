@@ -1,5 +1,6 @@
 import React from "react";
-import { BlogPostGrid } from "./blog/BlogPostGrid";
+import { BlogPostItem } from "./BlogPostItem";
+import "./BlogGrid.css";
 
 export interface BlogPost {
   id: string;
@@ -13,11 +14,12 @@ export interface BlogPost {
     pubDate: Date;
     description: string;
     author: string;
+    technical: boolean;
     image: {
-      // Define image properties here
     };
     tags: string[];
   };
+  
 }
 
 interface BlogProps {
@@ -26,12 +28,14 @@ interface BlogProps {
 
 const BlogGrid: React.FC<BlogProps> = ({ blogPosts }) => {
   return (
-    <div className="container">
-      {blogPosts && blogPosts.map(entry => {
-       return (
-       <BlogPostGrid blogPost={entry}></BlogPostGrid>
-       )
-      })}
+    <div className="blog-grid-container">
+      {blogPosts &&
+        blogPosts.map((entry) => {
+          // if (entry.data.technical) {
+          //   return <></>;
+          // }
+          return <BlogPostItem blogPost={entry}></BlogPostItem>;
+        })}
     </div>
   );
 };

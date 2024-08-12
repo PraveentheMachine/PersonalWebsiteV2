@@ -12,6 +12,7 @@ const postsCollection = defineCollection({
        quote: z.string(),
        author: z.string()
       }),
+      technical: z.boolean(),
       description: z.string(),
       author: z.string(),
       image: z.object({

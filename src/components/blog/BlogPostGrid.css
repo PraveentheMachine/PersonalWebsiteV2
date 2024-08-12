@@ -1,0 +1,13 @@
+
+.blog-grid-item {
+ height: 100%;
+}
+
+.blog-grid-item-link {
+ background-color: red;
+ display: flex;
+ text-decoration: none;
+ height: inherit;
+ /* justify-content: center; 
+ align-items: center; */
+}
